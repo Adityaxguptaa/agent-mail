@@ -8,7 +8,8 @@ SEEN_SNIPPET = None  # Global to track latest email
 
 def get_gmail_service():
     flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
-    creds = flow.run_local_server(port=0)
+    creds = flow.run_console()
+
     return build('gmail', 'v1', credentials=creds)
 
 def check_latest_email(service):
