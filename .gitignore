@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# dotenv file (keep secrets safe)
+.env
+
+# OAuth credentials (should never be exposed)
+credentials.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+"credentials.json" 
